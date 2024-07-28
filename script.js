@@ -1,4 +1,4 @@
-// Ensure the script runs after the DOM is fully loaded
+// Wait for the DOM content to be fully loaded before running the script
 document.addEventListener('DOMContentLoaded', () => {
     // Select DOM elements
     const addButton = document.getElementById('add-task-btn');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Retrieve and trim the value from the task input field
         const taskText = taskInput.value.trim();
 
-        // Check if the input field is not empty
+        // Check if the task text is not empty
         if (taskText !== "") {
             // Create a new li element
             const li = document.createElement('li');
@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Clear the task input field
             taskInput.value = '';
         } else {
+            // Alert user if the input is empty
             alert('Please enter a task.');
         }
     }
