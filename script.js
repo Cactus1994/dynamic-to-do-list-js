@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
             removeButton.className = 'remove-btn';
 
             // Add click event listener to remove the task
-            removeButton.onclick = () => {
+            removeButton.addEventListener('click', () => {
                 taskList.removeChild(li);
-            };
+            });
 
             // Append the remove button to the li element
             li.appendChild(removeButton);
