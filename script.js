@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to add a task
     function addTask() {
         const taskText = taskInput.value.trim();
-        
+
         // Check if the input is not empty
         if (taskText !== "") {
             // Create new list item (li) element
